@@ -1,0 +1,32 @@
+QCD_HT_100To250_13TeV-madgraph                    28730000
+QCD_HT_250To500_13TeV-madgraph                    670500
+QCD_HT_500To1000_13TeV-madgraph                    26740
+QCD_HT_1000ToInf_13TeV-madgraph                    769.7
+*********************  
+**qcd/QCD_1000_inf_madgraph**
+*********************  
+Initial Events:  333733
+After Trigger: 326170
+Total Events:326170
+Real time 0:00:03, CP time 1.700
+*********************  
+**qcd/QCD_100_250_madgraph**
+*********************  
+Initial Events:  4123612
+After Trigger: 0
+Total Events:0
+Real time 0:00:31, CP time 11.450
+*********************  
+**qcd/QCD_250_500_madgraph**
+*********************  
+Initial Events:  663953
+After Trigger: 4
+Total Events:4
+Real time 0:00:06, CP time 2.300
+*********************  
+**qcd/QCD_500_1000_madgraph**
+*********************  
+Initial Events:  849033
+After Trigger: 19901
+Total Events:19901
+Real time 0:00:09, CP time 3.180
