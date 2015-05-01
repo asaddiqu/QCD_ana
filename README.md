@@ -4,10 +4,11 @@ Please follow these steps in sequence:
 You can pass QCD MCs datasets through Ntuplizer to obtain an output root file.  
 For example, I pass a sample QCD file for 100 events and obtain an output root file:  
 "QCD_1000_inf_100events.root"  
-# 2) QCD_ana directory structure
+# 2) To do list in QCD_ana directory
 Before anything else, we should understand the structure of "QCD_ana" directory.  
 QCD_ana directory contains following two subdirectories:    
-#### a) Execute b). Macros    
+a). Execute b). Macros 
+## a). "Execute" directory structure
 Inside "Execute" directory, we have  
 - FirstBHMacro.C & FirstBHMacro.h (Main Code & header file)
 - compile.sh (To compile the main code)
@@ -17,22 +18,22 @@ Inside "Execute" directory, we have
 - output_qcd (Directory for output root files)
 - qcd.txt (File containing names of input root files)
   
-# 3) Ntuplizer's root file to FirstBHMacro.C's root file  
+#### Working in "Execute" directory
 As the root file (QCD_1000_inf_100events.root) created by Ntuplizer contains a tree with  
 several branches. We need a macro like "FirstBHMacro.C" to read that tree.  
 Now follow these steps inside "Execute" directory:  
-i)   Put the "QCD_1000_inf_100events.root" in "QCD" directory  
-ii)  Write its name in "qcd.txt" file, if you have several file in "QCD" directory then  
+- Put the "QCD_1000_inf_100events.root" in "QCD" directory  
+- Write its name in "qcd.txt" file, if you have several file in "QCD" directory then  
 each file name should be in separate line.  
-ii)  Set the paths inside "RunQCD.sh" file, for example paths of "Execute", "IntJobs" and  
+- Set the paths inside "RunQCD.sh" file, for example paths of "Execute", "IntJobs" and  
 "QCD" directories.  
-iii) In shell, please run "./compile.sh" to compile the code.  
-iv)  In shell, please run "./RunQCD.sh" to run the code.  
-v)   If everything goes fine, you will see output root file/files in "output_qcd" directory.  
-vi)  If you have several output root file, then add all the root files by root's hadd function.  
-vii) Now you can exit from "Execute" directory and go to "Macro" directory for beautiful plots ;)  
+- In shell, please run "./compile.sh" to compile the code.  
+- In shell, please run "./RunQCD.sh" to run the code.  
+- If everything goes fine, you will see output root file/files in "output_qcd" directory.  
+- If you have several output root file, then add all the root files by root's hadd function.  
+- Now you can exit from "Execute" directory and go to "Macro" directory for beautiful plots ;)  
 
-# 4) FirstBHMacro.C's root file to final plots  
+## "Macro" directory structure 
 I suppose you are in "Macro" directory now, and rest of job is a lot easier.
 The "Macro" directory contains subdirectories with respect to variables:
 - EtaPhi   
@@ -43,6 +44,7 @@ The "Macro" directory contains subdirectories with respect to variables:
 - sThT  
 - bh_plots (the output plots in eps formats go in this directory)
 
+####  Working in "Macro" directory
 For example, you are in shell and then you would go inside "sThT" directory:
 Now you can run
 ```
