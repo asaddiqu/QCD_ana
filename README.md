@@ -73,8 +73,9 @@ TString ref="3";
 ```
 You can go with the inclusive case by the same way.
 ### Please Note
-Don't forget to change the "output_qcd" root files path  and "bh_plots" path to   
+- Don't forget to change the "output_qcd" root files path  and "bh_plots" path to   
 read and save the plot properly.
+- Object ID and other cuts are applied in FirstBHMacro.C
 
 
 
