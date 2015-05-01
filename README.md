@@ -33,7 +33,7 @@ each file name should be in separate line.
 - If you have several output root file, then add all the root files by root's hadd function.  
 - Now you can exit from "Execute" directory and go to "Macro" directory for beautiful plots ;)  
 
-## "Macro" directory structure 
+## b). "Macro" directory structure 
 I suppose you are in "Macro" directory now, and rest of job is a lot easier.
 The "Macro" directory contains subdirectories with respect to variables:
 - EtaPhi   
