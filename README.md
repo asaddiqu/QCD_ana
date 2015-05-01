@@ -15,8 +15,9 @@ Inside "Execute" directory, we have
 - IntJobs (Directory for Interactive jobs produced by RunQCD.sh)
 - QCD (Directory for input root files)
 - output_qcd (Directory for output root files)
-- qcd.txt (File containing names of input root files)  
-# 3) Ntuplizer's root file to FirstBHMacro.C's root file
+- qcd.txt (File containing names of input root files)
+  
+# 3) Ntuplizer's root file to FirstBHMacro.C's root file  
 As the root file (QCD_1000_inf_100events.root) created by Ntuplizer contains a tree with  
 several branches. We need a macro like "FirstBHMacro.C" to read that tree.  
 Now follow these steps inside "Execute" directory:  
@@ -30,7 +31,8 @@ iv)  In shell, please run "./RunQCD.sh" to run the code.
 v)   If everything goes fine, you will see output root file/files in "output_qcd" directory.  
 vi)  If you have several output root file, then add all the root files by root's hadd function.  
 vii) Now you can exit from "Execute" directory and go to "Macro" directory for beautiful plots ;)  
-# 4) FirstBHMacro.C's root file to final plots
+
+# 4) FirstBHMacro.C's root file to final plots  
 I suppose you are in "Macro" directory now, and rest of job is a lot easier.
 The "Macro" directory contains subdirectories with respect to variables:
 - EtaPhi   
